@@ -1,0 +1,55 @@
+{
+	// Place your AtCoder workspace snippets here. Each snippet is defined under a snippet name and has a scope, prefix, body and 
+	// description. Add comma separated ids of the languages where the snippet is applicable in the scope field. If scope 
+	// is left empty or omitted, the snippet gets applied to all languages. The prefix is what is 
+	// used to trigger the snippet and the body will be expanded and inserted. Possible variables are: 
+	// $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders. 
+	// Placeholders with the same ids are connected.
+	// Example:
+	// "Print to console": {
+	// 	"scope": "javascript,typescript",
+	// 	"prefix": "log",
+	// 	"body": [
+	// 		"console.log('$1');",
+	// 		"$2"
+	// 	],
+	// 	"description": "Log output to console"
+	// }
+	"[C#] AtCoder solver": {
+		"prefix": "atcs",
+		"body":[
+			"using System;",
+			"using System.Linq;\n",
+			
+			"static class Solver {",
+				"\tpublic static void Main() => Solver.solve();\n",
+				
+				"\tstatic void solve() {",
+					"\t\tInput input = new Input();",
+					"\t\t$0",
+				"\t}",
+			"}\n",
+														
+			"class Input {",
+				"\tpublic int getInt() {",
+					"\t\treturn int.Parse(Console.ReadLine());",
+				"\t}\n",
+
+				"\tpublic int[] getIntArray() {",
+					"\t\treturn Array.ConvertAll(Console.ReadLine().Split(' '), int.Parse);",
+				"\t}\n",
+
+				"\tpublic string getString() {",
+				"\t\treturn Console.ReadLine();",
+				"\t}\n",
+			"}\n"
+		],
+		"description": "AtCoder Solver with C#"
+	},
+	"int Array": {
+		"prefix": "arrayi",
+		"body": [
+			"int[] Ar = input.getIntArray();\n"
+		]
+	}
+}
